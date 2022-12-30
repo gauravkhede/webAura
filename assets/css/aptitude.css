@@ -1,0 +1,59 @@
+/* Aptitude Page CSS  */
+.mainAptitudeContainer{
+    display:flex;
+}
+.topicsContainer{
+    margin-top: 1.4rem;
+    margin-left: 4vw;
+    width:20vw;
+    display:flex;
+    flex-direction: column;
+  }
+  .topicElement{
+    width: inherit;
+    height:5.2vh;
+    padding:0.4rem;
+    border:1px solid black;
+    font-weight: 600;
+  }
+  .questionContainer{
+    margin-top:1.4rem;
+    margin-left: 0.5rem;
+    min-width:74vw;
+    min-height:60vh;
+    background-color: #ca85da;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding:18vw 0vw;
+    font-size: 3rem;
+    font-family: cursive;
+  }
+  .topicElement:hover{
+    background-color: #fb048b;
+    color:#04FB74;
+  }
+  .questionCardContainer{
+    margin-top:1.4rem;
+    margin-bottom: 1.4rem;
+    margin-left: 4vw;
+    padding-top: 2vh;
+    padding-left:2vw;
+    display: block;
+    height:30vh;
+    width:60vw;
+    border:1px solid black;
+
+  }
+  .questionsAndOptionsContainer{
+    display:flex;
+    flex-direction: column;
+  }
+  .questionElement{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+  }
+ 
