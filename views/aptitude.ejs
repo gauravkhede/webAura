@@ -32,14 +32,19 @@
             <%= console.log(topicName)  %>
             <% if(topicName){ %>
                 <div class="questionsAndOptionsContainer">
+                    <% let count=1; %>
                 <% for(let question of allQuestions){ %>
+                    <% let questionNumber="question"+count %>
+                    <% let totalQuestions= allQuestions.length %>
+                    <%console.log(totalQuestions) %>
                     <div class="questionCardContainer"> 
                         <div class="questionElement"><%= question.question %></div> <hr>
-                        <div class="option1Element"><%= question.option1 %> </div>
-                        <div class="option2Element"><%= question.option2 %></div>
-                        <div class="option3Element"><%= question.option3 %></div>
-                        <div class="option4Element"><%= question.option4 %></div>
+                        <div class="option1Element options" onclick="getOption(event,'<%=question.option1%>','<%=question.correctAnswer%>','<%=count%>','<%= totalQuestions %>')"><%= question.option1 %> </div>
+                        <div class="option2Element options"  onclick="getOption(event,'<%=question.option2%>','<%=question.correctAnswer%>','<%=count%>','<%= totalQuestions %>')"><%= question.option2 %></div>
+                        <div class="option3Element options"  onclick="getOption(event,'<%=question.option3%>','<%=question.correctAnswer%>','<%=count%>','<%= totalQuestions %>')"><%= question.option3 %></div>
+                        <div class="option4Element options"  onclick="getOption(event,'<%=question.option4%>','<%=question.correctAnswer%>','<%=count%>','<%= totalQuestions %>')"><%= question.option4 %></div>
                     </div>
+                    <% count=count+1; %>
                     <% } %>
                 </div>
             <% }else{ %>
@@ -47,6 +52,6 @@
                 
                 <% } %>
             </div>
-                
+            <script src="/js/aptitude.js"></script>
     </body>
 </html>

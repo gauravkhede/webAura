@@ -234,3 +234,115 @@
 .marginRight-2{
     margin-right: 2rem;
 }
+/* Journey Container  */
+.JourneyContainer{
+  min-height: 100vh;
+  padding-top: 1rem;
+  background-color: #F0F8FF;
+}
+.headingTitle{
+  font-weight: 900;
+  font-size: 2.7rem;
+  /* justify-content: center; */
+  /* margin-left: 30vw; */
+  color: black;
+}
+.timeline{
+	width:75%;
+	/*border:2px solid;*/
+  margin-top: 3rem;
+	position:relative;
+  margin-left:10vw;
+	
+}
+.timeline-box{
+	width:40%;
+	/*border:1px solid;*/
+	margin :2rem;
+	position:relative;
+	left:5%;
+	min-height:150px;
+	display:flex;
+	flex-direction: column;
+  padding:1rem;
+  box-shadow: lightgray 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+.timeline-box:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.timeline-box:nth-child(2n){
+	left:53%;
+}
+.timeline-box:nth-child(2n+1)::after{
+	content:'';
+	position:absolute;
+	top:30%;
+	width:0.5rem;
+	height:0.5rem;
+	border-radius:50%;
+	right:-7%;
+	background-color:red;
+	z-index:1;
+}
+.timeline-box:nth-child(2n)::after{
+	content:'';
+	position:absolute;
+	top:30%;
+	width:0.5rem;
+	height:0.5rem;
+	border-radius:50%;
+	left:-15%;
+	background-color:red;
+	z-index:1;
+}
+.headingSection{
+  margin-left: 30vw;
+}
+.sectionLogo{
+  font-size:40px;
+	color:#2857a4;
+	display:inline-block;
+	padding-top:10px;
+	margin-right:0.5rem;
+}
+.sectionLogo img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.timeline-divider{
+  top:1%;
+  margin-left:50%;
+  position:absolute;
+  width:0%;
+  min-height:100%;
+  border:2px dashed #0096fa6b;
+}
+
+.timeline-traveller{
+  top:10%;
+  margin-left:50%;
+  position:sticky;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+.timeline-traveller img{
+  height:2.5rem;
+  width:2.5rem;
+}
+.timelineBoxHeading{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.timelineBoxDescription{
+  color: grey;
+}
+.timelineSymbol{
+  color:blue;
+
+}
+
+
+
