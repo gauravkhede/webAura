@@ -1,13 +1,17 @@
 .bodyContainer{
     margin:0;
     height:100vh;
+    position: relative;
     /* background-color:pink; */
 }
 .navigationBar{
     display:flex;
     height:15vh;
+    position: fixed;
+    top:0vh;
     /* background-color: orange; */
 }
+
 .logoContainer{
     width:30vw;
 }
@@ -21,6 +25,7 @@
     margin-right: 3rem;
     display:flex;
     justify-content: flex-end;
+    
     /* border:1px solid black; */
 }
 .navigationIcons{
@@ -32,7 +37,7 @@
 }
 /* photoGrid Section  */
 .photoGridSection{
-    
+    margin-top:15vh;
     display:flex;
     background-color: rgb(238,237,253);
 }
@@ -343,6 +348,80 @@
   color:blue;
 
 }
-
-
+/* affiliate section  */
+.affiliateSection{
+  min-height:100vh;
+  background-color: rgb(10,37,65);
+  display: flex;
+}
+.affiliateDescription{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color:white;
+}
+.affiliateHeadingSpan{
+  padding-top: 30vh;
+  margin-left: 7vw;
+  width:40vw;
+}
+#affiliateSectionHr{
+  width:40vw;
+  border:1px solid orange;
+  margin-left:0vw;
+  background: linear-gradient(to right, orange 70%, yellow);
+  
+}
+.affiliateDescriptionSpan{
+  margin-top:2rem;
+  margin-left: 7vw;
+  width:40vw;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.highestCommissionButtonDivision{
+  margin-top:2rem;
+  margin-left: 7vw;
+  padding:0.7rem;
+  height:7vh;
+  width:17vw;
+  border:1px solid white;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.requestCallbackButtonDivision{
+  margin-top: 1rem;
+  margin-left: 7vw;
+  padding:0.7rem;
+  height:7vh;
+  width:14vw;
+  border:1px solid white;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.registerForAffiliateFormContainer{
+  width:60vw;
+  /* display:flex; */
+}
+.registerForAffiliateFormHeading{
+  margin-top: 25vh;
+  margin-left: 15vw;
+  color:white;
+}
+.registerForAffiliateFormHeading h3{
+  background: linear-gradient(to right, orange,white, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.registerForAffiliateForm{
+  height:50vh;
+  width:30vw;
+  margin-top: 2.5rem;
+  margin-left: 15vw;
+}
+.white{
+  color:white;
+}
 
