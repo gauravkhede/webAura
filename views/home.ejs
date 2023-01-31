@@ -10,7 +10,7 @@
         <div class="bodyContainer">
             <div class="navigationBar">
                 <div class="logoContainer">
-                    <img src="https://scontent.fbho4-4.fna.fbcdn.net/v/t39.30808-6/322116367_1597187827398930_6215582221974825733_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=g8-V0yxmbCMAX96zBTM&tn=oSTqxHg0cWwbUEn-&_nc_ht=scontent.fbho4-4.fna&oh=00_AfAeygZjP3wwLwJzH85Q8NqPeWospXiW86vPrug0-xVjug&oe=63D59F48" alt="image" width="100">
+                    <img src="https://scontent.fbho4-4.fna.fbcdn.net/v/t39.30808-6/322116367_1597187827398930_6215582221974825733_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=on9_Krkx2lwAX8-uoyM&tn=oSTqxHg0cWwbUEn-&_nc_ht=scontent.fbho4-4.fna&oh=00_AfDL9GPmrM8jzMtw41eECr7P96hq8x-KS6iYwze-PeSlWw&oe=63DB8E08" alt="image" width="100">
                 </div>
                 <div class="navigationIconsContainer">
                     <div class="navigationIcons">
@@ -32,8 +32,8 @@
                     <div class="about marginRight-2"><B>About </B></div>
                     <div class="affiliate marginRight-2"><B>Affiliate </B></div>
                     <div class="hireTalent marginRight-2"><B>Hire Talent </B></div>
-                    <div class="signUp marginRight-2"><form method="get" action="/signup"><input type="submit" value="Sign Up" class="btn btn-primary"> </form></div>
-                    <div class="login marginRight-2"><form method="get" action="/login"><input type="submit" value="Log In" class="btn btn-primary"> </form></div>
+                    <div class="signUp marginRight-2"><form method="get" action="/signupPage"><input type="submit" value="Sign Up" class="btn btn-primary"> </form></div>
+                    <div class="login marginRight-2"><form method="get" action="/loginPage"><input type="submit" value="Log In" class="btn btn-primary"> </form></div>
                     </div> 
                 </div><hr>
         </div> 
@@ -55,7 +55,7 @@
                 <button type="button" class="btn btn-info getDemoFreeButton">GET FREE DEMO</button>
             </div>
             
-            <div class="modelPhotoContainer"><img src="https://scontent.fbho4-3.fna.fbcdn.net/v/t39.30808-6/321831886_2314988095342807_3562996469581122802_n.jpg?stp=dst-jpg_p843x403&_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=tC1jHyaYiekAX8_UH_I&_nc_ht=scontent.fbho4-3.fna&oh=00_AfAQqFprQRz5WGYrFVHozFrSjffEdOuksEXt4Vqjm3R9SQ&oe=63D5E9D8" alt="Model Image"></div>
+            <div class="modelPhotoContainer"><img src="https://scontent.fbho4-3.fna.fbcdn.net/v/t39.30808-6/321831886_2314988095342807_3562996469581122802_n.jpg?stp=dst-jpg_p843x403&_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=7sR0n3gemcAAX-TiEbf&_nc_ht=scontent.fbho4-3.fna&oh=00_AfCn2hA56XyX45j-jHEKvU_u2aREt4xbS8eLXTSjTWReTg&oe=63DBD898" alt="Model Image"></div>
         </div>
         <div class="JourneyContainer">
             <div class="headingSection"><span class="sectionLogo"><img src="https://cdn-icons-png.flaticon.com/512/854/854894.png"></span><span class="headingTitle"> Your Journey Roadmap </span></div>
@@ -102,24 +102,28 @@
             <div class="registerForAffiliateFormContainer">
                 <div class="registerForAffiliateFormHeading"><h3>Register For Affiliate Program </h3></div>
                 <div class="registerForAffiliateForm">
-                    <form>
+                    <form method="post" action="/referral">
                         <div class="form-group">
                           <label for="exampleInputEmail1" class="white">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="inputEmail">
                           <small id="emailHelp" class="form-text text-muted ">We'll never share your email with anyone else.</small>
                         </div>
                         <div class="form-group">
                             <label for="name" class="white">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="inputName">
                           </div>
                         <div class="form-group">
                           <label for="exampleInputPassword1" class="white">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="inputPassword">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword2" class="white">Confirm Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" name="inputConfirmPassword">
                           </div>
+                          <div class="form-group">
+                            <label for="phoneInput" class="white">Phone Number</label>
+                            <input type="text" class="form-control" id="phoneInput" placeholder="Enter Phone" name="inputPhone">
+                            </div>
                         <div class="form-group form-check">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label white" for="exampleCheck1">I agree to the Web Aura's conditions of use.</label>
@@ -190,8 +194,24 @@
                 <div class="containerCourse"><span id="pythonCourse">Python</span> <br> <button type="button" class="btn btn-warning">View</button></div>
             </div>
             <div class="courseAndNextBatchComingBatch">
-                <span> -- &nbsp; &nbsp; <div id="headingCourseAndNextBatch"></div> &nbsp; &nbsp; --</span> <br>
-                <span class="nextBatchSpan"> NEXT BATCH</span> <span class="soonSpan yellow">SOON</span>
+                <!-- <span> -- &nbsp; &nbsp; <div id="headingCourseAndNextBatch"></div> &nbsp; &nbsp; --</span> <br> -->
+                <span class="nextBatchSpan"> ------- NEXT BATCH </span> <span class="soonSpan yellow">SOON -------</span>
+                <div class="containerOfNextBatchDescription">
+                <div class="courseAndNextBatchComingBatchDescriptionContainer">
+                    <div class="courseAndNextBatchComingBatchDescriptionDivision">
+                        <div class="courseAndNextBatchComingBatchDescription">
+                            Next Batch Coming Soon <br>
+                            7th Of February 2023 <br>
+                            Venus Tutorials, Ghatizeen, Khargone
+                        </div>
+                    </div>
+                </div>
+                <div class="courseAndNextBatchComingBatchPictureContainer">
+                    <div id="courseAndNextBatchComingBatchPicture"><img src="https://scontent.fbho4-3.fna.fbcdn.net/v/t39.30808-6/325737535_3500975266829970_356716971673714433_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=V82ve-pxlhEAX_8AGYk&_nc_ht=scontent.fbho4-3.fna&oh=00_AfAjP0_49KJG2exvAfQWjwAUqIocddOXLiC4VvynCNtqnw&oe=63DCD0E0" id="courseAndNextBatchComingBatchImageTag"></div>
+                    <div id="courseAndNextBatchComingBatchPictureController"><button id="button1"><iconify-icon icon="radix-icons:dot-filled"></iconify-icon></button><button id="button2"> <iconify-icon icon="radix-icons:dot-filled"></iconify-icon> </button><button id="button3"><iconify-icon icon="radix-icons:dot-filled"></iconify-icon></button></div>
+                </div>
+                </div>
+
             </div>
         </div>
         <div class="interestedFormContainer">
@@ -221,6 +241,7 @@
                     <label for="phoneInputInterestedForm"> Phone Number</label>
                     <input type="text" class="form-control" id="phoneInputInterestedForm" placeholder="Enter Phone">
                     </div>
+                    
                     <div class="form-group form-check">
                       <input type="checkbox" class="form-check-input" id="inputCheckboxInterestedForm">
                       <label class="form-check-label" for="exampleCheck1">I agree to the Web Aura's conditions of use.</label>

@@ -4,7 +4,7 @@ const referalSchema=new mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         ref:'User'
     },
-    referalCode:{
+    referralCode:{
         type:String,
         required:true
     }
